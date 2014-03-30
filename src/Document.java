@@ -47,6 +47,7 @@ public class Document{
 		Random ran = new Random();
 		index = ran.nextInt(One.length);
 		oneCrossA = One[index];
+		//使用hashset，防止产生的入口和出口重复。
 		Set<Integer> setOne = new HashSet<Integer>();
 		setOne.add(One[index]);
 		while (setOne.size() < 2) {
